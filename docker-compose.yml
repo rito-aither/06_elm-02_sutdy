@@ -4,7 +4,7 @@ services:
     build: .
     image : elm_local
     volumes:
-      - "./elm:/elm"
+      - "./:/elm"
     # command: bash -c "yarn install && rm -rf forManage/elm-stuff forAnswer/elm-stuff"
     ports:
       - 8080:8080

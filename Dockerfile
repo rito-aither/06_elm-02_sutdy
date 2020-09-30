@@ -6,7 +6,7 @@ ENV SHELL=bash
 WORKDIR /elm
 
 RUN npm i \
-    npm i elm \
+    npm i -g elm --unsafe-perm=true --allow-root \
     npm i create-elm-app
 
 
