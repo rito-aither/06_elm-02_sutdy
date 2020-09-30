@@ -1,0 +1,16 @@
+version: "3"
+services:
+  elm_main:
+    build: .
+    image : elm_local
+    volumes:
+      - "./elm:/elm"
+    # command: bash -c "yarn install && rm -rf forManage/elm-stuff forAnswer/elm-stuff"
+    ports:
+      - 8080:8080
+    tty: true
+
+  # elm_main:
+  #   image: elm
+  #   volumes:
+  #     - "./elm:/elm"
